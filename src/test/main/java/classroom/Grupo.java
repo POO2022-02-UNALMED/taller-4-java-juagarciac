@@ -2,11 +2,11 @@ package classroom;
 
 public class Grupo {
 
-    Persona[] estudiantes;
-    Persona profesor;
-    Asignatura asignatura;
-    final int codigo = 0;
-    String horario;
+    private Persona[] estudiantes;
+    private Persona profesor;
+    private Asignatura asignatura;
+    private final int codigo;
+    private String horario;
 
     Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
         this.estudiantes = estudiantes;
@@ -27,7 +27,7 @@ public class Grupo {
         this.asignatura = asignatura;
     }
 
-    void cambiarEstudiante(Persona estudianteViejo, Persona estudianteNuevo) {
+    public void cambiarEstudiante(Persona estudianteViejo, Persona estudianteNuevo) {
         for (int i = 0; i < estudiantes.length; i++) {
             if (estudiantes[i].getCedula() == estudianteViejo.getCedula()) {
                 estudiantes[i] = estudianteNuevo;
@@ -36,7 +36,7 @@ public class Grupo {
         }
     }
     
-    void cambiarEstudiante(int indice, Persona estudiante) {
+    public void cambiarEstudiante(int indice, Persona estudiante) {
         estudiantes[indice] = estudiante;
     }
 }
