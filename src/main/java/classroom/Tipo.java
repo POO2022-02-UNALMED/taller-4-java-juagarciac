@@ -1,7 +1,7 @@
 package classroom;
 
 public enum Tipo {
-	DISCIPLINAR(10),FUNDAMENTACION(20),ELECTIVA(30)
+	DISCIPLINAR(10),FUNDAMENTACION(20),ELECTIVA(30);
 	public int codigo;
 	
 	private Tipo(int codigo) {
