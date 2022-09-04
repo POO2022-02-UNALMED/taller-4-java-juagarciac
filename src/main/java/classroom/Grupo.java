@@ -5,7 +5,7 @@ public class Grupo {
     private Persona[] estudiantes;
     private Persona profesor;
     private Asignatura asignatura;
-    private final int codigo;
+    public final int codigo;
     private String horario;
 
     Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
