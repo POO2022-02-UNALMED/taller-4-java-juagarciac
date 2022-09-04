@@ -7,3 +7,4 @@ public enum Tipo {
 	private Tipo(int codigo) {
 		this.codigo = codigo;
 	}
+}
