@@ -19,24 +19,17 @@ public class Asignatura {
     }
 
     Asignatura(int codigoExterno,Tipo tipo) {
-        this("Sin nombre", 0, codigoExterno,tipo);
-    }
-
-    Asignatura(String nombre, Tipo tipo) {
-        this(nombre, 0, 0,tipo);
-    }
-    public void cambiarDatos(int codigoInterno, int codigoExterno, String nombre,Tipo tipo) {
-        this.codigoInterno = codigoInterno;
+    	this.nombre ="Sin nombre";
         this.codigoExterno = codigoExterno;
-        this.nombre = nombre;
         this.tipo = tipo;
     }
 
-    public void cambiarDatos(int codigoInterno) {
-        this.codigoInterno = codigoInterno;
+    Asignatura(String nombre, Tipo tipo) {
+    	this.nombre = nombre;
+        this.tipo = tipo;
     }
 
-    void cambiarDatos(int codigoExterno) {
+    public void cambiarDatos(int codigoExterno) {
         this.codigoExterno = codigoExterno;
     }
 
