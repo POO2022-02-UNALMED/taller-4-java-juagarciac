@@ -16,10 +16,14 @@ public class Asignatura {
 
     Asignatura() {
         this.nombre="Sin nombre";
+        this.codigoInterno = 0;
+        this.codigoExterno = 0;
+        this.tipo = null;
     }
 
     Asignatura(int codigoExterno,Tipo tipo) {
     	this.nombre ="Sin nombre";
+    	this.codigoInterno = 0;
         this.codigoExterno = codigoExterno;
         this.tipo = tipo;
     }
@@ -27,6 +31,8 @@ public class Asignatura {
     Asignatura(String nombre, Tipo tipo) {
     	this.nombre = nombre;
         this.tipo = tipo;
+        this.codigoInterno = 0;
+        this.codigoExterno = 0;
     }
 
     public void cambiarDatos(int codigoExterno) {
